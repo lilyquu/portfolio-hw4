@@ -30,6 +30,10 @@ btncreate.addEventListener('click', () => {
     titlein = input[0];
     datein = input[1];
     summaryin = input[2];
+
+    realtitle = document.getElementById('realtitle');
+    realdate = document.getElementById('realdate');
+    realsummary = document.getElementById('realsummary');
     
     let myPost = {
         title : titlein,
