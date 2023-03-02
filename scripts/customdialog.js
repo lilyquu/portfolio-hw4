@@ -26,8 +26,14 @@ selectEl.addEventListener('change', (e) => {
     confirmBtnn.value = selectEl.value;
 });
 // "Confirm" button of form triggers "close" on dialog because of [method="dialog"]
-promptDialog.addEventListener('close', () => {
-    out.value = `ReturnValue: ${promptDialog.returnValue}.`;
+favDialog.addEventListener('close', () => {
+    outputBox.value = `ReturnValue: ${favDialog.returnValue}.`;
+});
+
+
+// "Favorite animal" input sets the value of the submit button
+selectEl.addEventListener('change', (e) => {
+    confirmBtn.value = selectEl.value;
 });
 
 // "Confirm" button of form triggers "close" on dialog because of [method="dialog"]
