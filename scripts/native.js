@@ -4,4 +4,8 @@ const promptbtn = document.getElementById("prompt");
 const saferpromptbtn = document.getElementById("saferprompt");
 
 alertbtn.addEventListener('click', function(){alert("alert")});
-confirmbtn.addEventListener('click', function(){confirm("confirm")});
+confirmbtn.addEventListener('click', function(){
+    let text = "Confirm Here.";
+    text = "The value returned by the confirm method is : " + confirm(text);
+    document.getElementById("output").innerHTML = text;
+});
