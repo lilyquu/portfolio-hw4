@@ -22,12 +22,12 @@ promptbtn.addEventListener('click', ()=>{
 })
 
 saferpromptbtn.addEventListener('click', ()=>{
-    let pro = prompt("Please enter your prompt","Enter Here");
-    if (pro == null){
+    let prom = prompt("Please enter your prompt","Enter Here");
+    if (prom == null){
         document.getElementById("output").innerHTML = "User didn't enter anything";
     }
     else {
-        let clean = DOMPurify.sanitize(pro);
+        let clean = DOMPurify.sanitize(prom);
         document.getElementById("output").innerHTML = clean;
     }
 })
