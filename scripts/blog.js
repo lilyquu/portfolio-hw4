@@ -10,9 +10,9 @@ const btncreate = document.getElementById('btncreate');
 const btnedit = document.getElementById('btnedit');
 const btndelete = document.getElementById('btndelete');
 
-const realtitle = document.getElementById('realtitle');
-const realdate = document.getElementById('realdate');
-const realsummary = document.getElementById('realsummary');
+let realtitle = document.getElementById('realtitle');
+let realdate = document.getElementById('realdate');
+let realsummary = document.getElementById('realsummary');
 
 let input = document.querySelector('input');
 let titlein = input[0];
