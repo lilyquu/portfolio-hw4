@@ -31,10 +31,6 @@ confirmDialog.addEventListener('close', () => {
     outputBox.value = `ReturnValue: ${confirmDialog.returnValue}.`;
 });
 
-btncancel.addEventListener('click', () => {
-    outputBox.value = "User didn't enter anything";
-});
-
-btnok.addEventListener('click', () => {
-    outputBox.value = inputBox.value;
+promptDialog.addEventListener('close', () => {
+    outputBox.value = `ReturnValue: ${confirmDialog.returnValue}.`;
 });
