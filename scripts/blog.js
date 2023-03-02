@@ -38,8 +38,6 @@ btncreate.addEventListener('click', () => {
     }
     
     window.localStorage.setItem(`myPost${count}`, JSON.stringify(myPost));
-    
-    window.localStorage.getItem('myPost1');
 
     realtitle.innerText = titlein;
     realdate.innerText = datein;
