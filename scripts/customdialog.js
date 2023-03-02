@@ -28,14 +28,14 @@ promptBtn.addEventListener('click', () => {
 
 // "Favorite animal" input sets the value of the submit button
 selectEl.addEventListener('input', (e) => {
-    btnok.value = selectEl;
+    btnok.value = selectEl.value;
 });
 
 // "Confirm" button of form triggers "close" on dialog because of [method="dialog"]
 confirmDialog.addEventListener('close', () => {
-    outputBox.value = `${confirmDialog.returnValue}`;
+    outputBox.value = `ReturnValue: ${confirmDialog.returnValue}.`;
 });
 
 promptDialog.addEventListener('close', () => {
-    outputBox.value = `${promptDialog.returnValue}`;
+    outputBox.value = `${promptDialog.returnValue}.`;
 });
