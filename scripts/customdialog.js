@@ -8,6 +8,8 @@ const promptDialog = document.getElementById('promptDialog');
 
 const selectEl = confirmDialog.querySelector('select');
 const out = document.getElementById('out');
+const okBtn = confirmDialog.querySelector('#OKBtn');
+
 
 // "Show the dialog" button opens the <dialog> modally
 alertBtn.addEventListener('click', () => {
@@ -18,12 +20,7 @@ confirmBtn.addEventListener('click', () => {
     confirmDialog.showModal();
 });
 
-// "Favorite animal" input sets the value of the submit button
-selectEl.addEventListener('change', (e) => {
-    confirmBtn.value = selectEl.value;
-});
-
 // "Confirm" button of form triggers "close" on dialog because of [method="dialog"]
 confirmDialog.addEventListener('close', () => {
-    out.innerHTML = confirmDialog.returnValue;
+    out.value = `ReturnValue: ${confirmDialog.returnValue}.`;
 });
