@@ -24,9 +24,6 @@ selectEl.addEventListener('change', (e) => {
 });
 
 // "Confirm" button of form triggers "close" on dialog because of [method="dialog"]
-
-
 confirmDialog.addEventListener('close', () => {
-    outputBox.value = `ReturnValue: ${confirmDialog.returnValue}.`;
-    outputBox.innerHTML = `ReturnValue: ${confirmDialog.returnValue}.`;
+    out.innerHTML = `ReturnValue: ${confirmDialog.returnValue}.`;
 });
