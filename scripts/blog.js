@@ -43,6 +43,13 @@ btncreate.addEventListener('click', () => {
     
     window.localStorage.setItem(`myPost${count}`, JSON.stringify(myPost));
 
+    var titlee = document.createTextNode(realtitle.value);
+    var datee = document.createTextNode(realdate.value);
+    var summaryy = document.createTextNode(realsummary.value);
+    document.body.appendChild(titlee);
+    document.body.appendChild(datee);
+    document.body.appendChild(summaryy)
+
     var temp = document.getElementsByTagName("template")[0];
     var clon = temp.content.cloneNode(true);
     document.body.appendChild(clon);
