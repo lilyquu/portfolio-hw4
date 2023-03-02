@@ -43,9 +43,9 @@ btncreate.addEventListener('click', () => {
     
     window.localStorage.setItem(`myPost${count}`, JSON.stringify(myPost));
 
-    document.body.appendChild(titlein);
-    document.body.appendChild(datein);
-    document.body.appendChild(summaryin);
+    document.body.append(titlein);
+    document.body.append(datein);
+    document.body.append(summaryin);
     realtitle = titlein;
     realdate = datein;
     realsummary = summaryin;
