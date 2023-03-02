@@ -7,7 +7,7 @@ const confirmDialog = document.getElementById('confirmDialog');
 const promptDialog = document.getElementById('promptDialog');
 
 const outputBox = document.querySelector('output');
-const selectEl = favDialog.querySelector('select');
+
 const confirmBtnn = favDialog.querySelector('#confirmBtn');
 
 // "Show the dialog" button opens the <dialog> modally
