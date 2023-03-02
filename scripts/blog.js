@@ -41,9 +41,6 @@ btncreate.addEventListener('click', () => {
     
     window.localStorage.getItem('myPost1');
 
-    log(titlein);
-    log(datein);
-    log(summaryin);
     realtitle.innerHTML = titlein;
     realdate.innerHTML = datein;
     realsummary.innerHTML = summaryin;
