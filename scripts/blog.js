@@ -27,9 +27,9 @@ createBtn.addEventListener('click', () => {
 btncreate.addEventListener('click', () => {
     count = count + 1;
     input = document.querySelector('input');
-    titlein = input[0];
-    datein = input[1];
-    summaryin = input[2];
+    titlein = document.getElementById('titleinput');
+    datein = document.getElementById('dateinput');
+    summaryin = document.getElementById('summaryinput');
 
     realtitle = document.getElementById('realtitle');
     realdate = document.getElementById('realdate');
