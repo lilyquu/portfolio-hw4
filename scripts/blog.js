@@ -1,5 +1,5 @@
 const createBtn = document.getElementById('createbtn');
-const createDialog = document.getElementById('promptDialog');
+const createDialog = document.getElementById('createDialog');
 
 const selectEl = createDialog.querySelector('input');
 const outputBox = document.querySelector('output');
