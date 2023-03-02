@@ -10,6 +10,10 @@ const btncreate = document.getElementById('btncreate');
 const btnedit = document.getElementById('btnedit');
 const btndelete = document.getElementById('btndelete');
 
+const realtitle = document.getElementById('realtitle');
+const realdate = document.getElementById('realdate');
+const realsummary = document.getElementById('realsummary');
+
 let input = document.querySelector('input');
 let titlein = input[0];
 let datein = input[1];
@@ -36,7 +40,11 @@ btncreate.addEventListener('click', () => {
     window.localStorage.setItem(`myPost${count}`, JSON.stringify(myPost));
     
     window.localStorage.getItem('myPost1');
-    
+
+    realtitle.innerHTML = titlein;
+    realdate.innerHTML = datein;
+    realsummary,innerHTML = summaryin;
+
     var temp = document.getElementsByTagName("template")[0];
     var clon = temp.content.cloneNode(true);
     document.body.appendChild(clon);
