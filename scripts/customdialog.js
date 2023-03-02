@@ -33,7 +33,3 @@ selectEl.addEventListener('change', (e) => {
 confirmDialog.addEventListener('close', () => {
     out.value = `ReturnValue: ${confirmDialog.returnValue}.`;
 });
-
-promptDialog.addEventListener('close', () => {
-    out.value = `ReturnValue: ${promptDialog.returnValue}.`;
-});
