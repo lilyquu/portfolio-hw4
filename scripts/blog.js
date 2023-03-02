@@ -45,13 +45,13 @@ btncreate.addEventListener('click', () => {
     document.body.appendChild(titlee);
 
     var linebreak = document.createElement("br");
-    document.appendChild(linebreak);
+    queryForm.appendChild(linebreak);
 
     document.body.appendChild(datee);
-    document.appendChild(linebreak);
+    queryForm.appendChild(linebreak);
 
     document.body.appendChild(summaryy)
-    document.appendChild(linebreak);
+    queryForm.appendChild(linebreak);
 
 
     var buttone = document.createElement("button")
@@ -62,6 +62,6 @@ btncreate.addEventListener('click', () => {
 
     document.body.appendChild(buttone);
     document.body.appendChild(buttonc);
-    document.appendChild(linebreak);
+    queryForm.appendChild(linebreak);
 
 })
