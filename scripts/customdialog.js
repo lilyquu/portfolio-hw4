@@ -27,7 +27,3 @@ promptBtn.addEventListener('click', () => {
 confirmDialog.addEventListener('close', () => {
     outputBox.value = `ReturnValue: ${confirmDialog.returnValue}.`;
 });
-
-promptDialog.addEventListener('close', () => {
-    outputBox.value = `ReturnValue: ${inputBox.Value}.`;
-});
