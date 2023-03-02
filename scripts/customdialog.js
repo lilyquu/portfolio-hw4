@@ -37,5 +37,5 @@ confirmDialog.addEventListener('close', () => {
 });
 
 promptDialog.addEventListener('close', () => {
-    outputBox.value = `ReturnValue: ${confirmDialog.returnValue}.`;
+    outputBox.value = `ReturnValue: ${promptDialog.returnValue}.`;
 });
