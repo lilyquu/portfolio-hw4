@@ -12,7 +12,7 @@ confirmbtn.addEventListener('click', function(){
 });
 
 promptbtn.addEventListener('click', ()=>{
-    let pro = prompt("Please enter your prompt", "Here");
+    let pro = prompt("Please enter your prompt");
     if (pro == null){
         document.getElementById("output").innerHTML = "User didn't enter anything";
     }
