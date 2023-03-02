@@ -6,7 +6,7 @@ const alertDialog = document.getElementById('alertDialog');
 const confirmDialog = document.getElementById('confirmDialog');
 const promptDialog = document.getElementById('promptDialog');
 
-const selectEl = confirmDialog.querySelector('select');
+const selectEl = promptDialog.querySelector('input');
 const outputBox = document.querySelector('output');
 const inputBox = document.querySelector('input');
 
@@ -24,6 +24,11 @@ confirmBtn.addEventListener('click', () => {
 
 promptBtn.addEventListener('click', () => {
     promptDialog.showModal();
+});
+
+// "Favorite animal" input sets the value of the submit button
+selectEl.addEventListener('input', (e) => {
+    btnok.value = selectEl.value;
 });
 
 // "Confirm" button of form triggers "close" on dialog because of [method="dialog"]
