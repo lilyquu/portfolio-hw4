@@ -33,9 +33,9 @@ selectEl.addEventListener('input', (e) => {
 
 // "Confirm" button of form triggers "close" on dialog because of [method="dialog"]
 confirmDialog.addEventListener('close', () => {
-    outputBox.value = `ReturnValue: ${confirmDialog.returnValue}.`;
+    outputBox.value = confirmDialog.returnValue;
 });
 
 promptDialog.addEventListener('close', () => {
-    outputBox.value = `ReturnValue: ${promptDialog.returnValue}.`;
+    outputBox.value = promptDialog.returnValue;
 });
