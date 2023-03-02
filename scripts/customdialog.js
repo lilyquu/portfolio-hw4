@@ -29,4 +29,5 @@ alertDialog.addEventListener('close', () => {
 
 confirmDialog.addEventListener('close', () => {
     outputBox.value = `ReturnValue: ${confirmDialog.returnValue}.`;
+    outputBox.innerHTML = `ReturnValue: ${confirmDialog.returnValue}.`;
 });
