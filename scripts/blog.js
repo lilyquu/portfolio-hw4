@@ -7,6 +7,8 @@ const inputBox = document.querySelector('input');
 
 const btncancel = document.getElementById('btncancel');
 const btncreate = document.getElementById('btncreate');
+const btnedit = document.getElementById('btnedit');
+const btndelete = document.getElementById('btndelete');
 
 let input = document.querySelector('input');
 let titlein = input[0];
@@ -16,9 +18,6 @@ let count = 0;
 
 createBtn.addEventListener('click', () => {
     createDialog.showModal();
-    var temp = document.getElementsByTagName("template")[0];
-    var clon = temp.content.cloneNode(true);
-    document.body.appendChild(clon);
 });
 
 btncreate.addEventListener('click', () => {
