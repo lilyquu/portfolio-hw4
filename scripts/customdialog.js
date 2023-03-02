@@ -8,7 +8,7 @@ const promptDialog = document.getElementById('promptDialog');
 
 const selectEl = confirmDialog.querySelector('select');
 const outputBox = document.querySelector('output');
-const confirmBtnn = confirmDialog.querySelector('#OKBtn');
+const inputBox = document.querySelector('input');
 
 // "Show the dialog" button opens the <dialog> modally
 alertBtn.addEventListener('click', () => {
@@ -26,4 +26,8 @@ promptBtn.addEventListener('click', () => {
 // "Confirm" button of form triggers "close" on dialog because of [method="dialog"]
 confirmDialog.addEventListener('close', () => {
     outputBox.value = `ReturnValue: ${confirmDialog.returnValue}.`;
+});
+
+confirmDialog.addEventListener('close', () => {
+    outputBox.value = `ReturnValue: ${inputBox.Value}.`;
 });
