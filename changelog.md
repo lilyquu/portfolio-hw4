@@ -1,0 +1,1 @@
+In this assignment, I improve my personal website by filling in placeholder contents.
