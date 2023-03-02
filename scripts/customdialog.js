@@ -7,7 +7,7 @@ const confirmDialog = document.getElementById('confirmDialog');
 const promptDialog = document.getElementById('promptDialog');
 
 const selectEl = confirmDialog.querySelector('select');
-const out = document.getElementById('out');
+const out = document.querySelector('output');
 const okBtn = confirmDialog.querySelector('#OKBtn');
 
 
