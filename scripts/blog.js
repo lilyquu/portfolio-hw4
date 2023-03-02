@@ -44,15 +44,9 @@ btncreate.addEventListener('click', () => {
     var summaryy = document.createTextNode(summaryin.value);
     document.body.appendChild(titlee);
 
-    var linebreak = document.createElement("br");
-    queryForm.appendChild(linebreak);
-
     document.body.appendChild(datee);
-    queryForm.appendChild(linebreak);
 
     document.body.appendChild(summaryy)
-    queryForm.appendChild(linebreak);
-
 
     var buttone = document.createElement("button")
     var buttonc = document.createElement("button")
@@ -62,6 +56,5 @@ btncreate.addEventListener('click', () => {
 
     document.body.appendChild(buttone);
     document.body.appendChild(buttonc);
-    queryForm.appendChild(linebreak);
 
 })
