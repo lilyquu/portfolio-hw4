@@ -15,8 +15,29 @@
 
 <body>
   <main>
-    <h1>Blog</h1>
-    
+    <p>Blog</p>
+
+    <button id="createbtn">create new post</button>
+
+    <dialog id="createDialog">
+        <form method="dialog">
+            <p>Post Title:</p>
+            <input id="titleinput">
+            <br>
+            <br>
+            <p>Post Date:</p>
+            <input id="dateinput">
+            <br>
+            <br>
+            <p>Post Summary:</p>
+            <input id="summaryinput">
+            <br>
+            <br>
+            <button id="btncancel" value="user cancel the post creation">Cancel</button>
+            <button id="btncreate" value="default">Create</button>
+        </form>
+    </dialog>
+
   </main>
 </body>
 
