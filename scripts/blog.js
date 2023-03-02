@@ -46,7 +46,10 @@ btncreate.addEventListener('click', () => {
     document.body.appendChild(datee);
     document.body.appendChild(summaryy)
 
-    var temp = document.getElementsByTagName("template")[0];
-    var clon = temp.content.cloneNode(true);
-    document.body.appendChild(clon);
+    var buttone = document.createElement("button")
+    var buttonc = document.createElement("button")
+
+    buttone.innerHTML = "Edit";
+    buttonc.innerHTML = "Create";
+
 })
