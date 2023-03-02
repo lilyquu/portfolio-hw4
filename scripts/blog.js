@@ -30,10 +30,6 @@ btncreate.addEventListener('click', () => {
     titlein = document.getElementById('titleinput');
     datein = document.getElementById('dateinput');
     summaryin = document.getElementById('summaryinput');
-
-    realtitle = document.getElementById('realtitle');
-    realdate = document.getElementById('realdate');
-    realsummary = document.getElementById('realsummary');
     
     let myPost = {
         title : titlein,
@@ -43,10 +39,10 @@ btncreate.addEventListener('click', () => {
     
     window.localStorage.setItem(`myPost${count}`, JSON.stringify(myPost));
 
-    var titlee = document.createTextNode(realtitle);
-    var datee = document.createTextNode(realdate);
-    var summaryy = document.createTextNode(realsummary);
-    document.body.appendChild(realtitle);
+    var titlee = document.createTextNode(titlein);
+    var datee = document.createTextNode(datein);
+    var summaryy = document.createTextNode(summaryin);
+    document.body.appendChild(titlee);
     document.body.appendChild(datee);
     document.body.appendChild(summaryy)
 
