@@ -1,7 +1,7 @@
 const alertbtn = document.getElementById('alert');
-const confirm = document.getElementById('confirm');
-const prompt = document.getElementById("prompt");
-const saferprompt = document.getElementById("saferprompt");
+const confirmbtn = document.getElementById('confirm');
+const promptbtn = document.getElementById("prompt");
+const saferpromptbtn = document.getElementById("saferprompt");
 
 alertbtn.addEventListener('click', function(){alert("alert")});
-confirm.addEventListener('click', function(){confirm("alert")});
+confirmbtn.addEventListener('click', function(){confirm("confirm")});
