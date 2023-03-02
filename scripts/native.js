@@ -4,3 +4,4 @@ const prompt = document.getElementById("prompt");
 const saferprompt = document.getElementById("saferprompt");
 
 alert.addEventListener('click', function(){alert("alert")});
+confirm.addEventListener('click', function(){confirm("alert")});
