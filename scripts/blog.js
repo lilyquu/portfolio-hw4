@@ -52,4 +52,7 @@ btncreate.addEventListener('click', () => {
     buttone.innerHTML = "Edit";
     buttonc.innerHTML = "Create";
 
+    document.body.appendChild(buttone);
+    document.body.appendChild(buttonc);
+
 })
