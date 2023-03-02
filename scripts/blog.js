@@ -16,6 +16,9 @@ let count = 0;
 
 createBtn.addEventListener('click', () => {
     createDialog.showModal();
+    var temp = document.getElementsByTagName("template")[0];
+    var clon = temp.content.cloneNode(true);
+    document.body.appendChild(clon);
 });
 
 btncreate.addEventListener('click', () => {
