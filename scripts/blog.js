@@ -43,9 +43,9 @@ btncreate.addEventListener('click', () => {
     
     window.localStorage.setItem(`myPost${count}`, JSON.stringify(myPost));
 
-    realtitle.innerText = titlein;
-    realdate.innerText = datein;
-    realsummary.innerText = summaryin;
+    realtitle = titlein;
+    realdate = datein;
+    realsummary = summaryin;
 
     var temp = document.getElementsByTagName("template")[0];
     var clon = temp.content.cloneNode(true);
