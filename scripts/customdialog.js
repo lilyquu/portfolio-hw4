@@ -28,6 +28,6 @@ confirmDialog.addEventListener('close', () => {
     outputBox.value = `ReturnValue: ${confirmDialog.returnValue}.`;
 });
 
-confirmDialog.addEventListener('close', () => {
+promptDialog.addEventListener('close', () => {
     outputBox.value = `ReturnValue: ${inputBox.Value}.`;
 });
