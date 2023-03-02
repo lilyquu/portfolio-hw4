@@ -19,9 +19,11 @@ confirmBtn.addEventListener('click', () => {
     confirmDialog.showModal();
 });
 
+promptBtn.addEventListener('click', () => {
+    promptDialog.showModal();
+});
+
 // "Confirm" button of form triggers "close" on dialog because of [method="dialog"]
-
-
 confirmDialog.addEventListener('close', () => {
     outputBox.value = `ReturnValue: ${confirmDialog.returnValue}.`;
 });
