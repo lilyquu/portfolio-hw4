@@ -46,7 +46,7 @@ btncreate.addEventListener('click', () => {
     var titlee = document.createTextNode(realtitle);
     var datee = document.createTextNode(realdate);
     var summaryy = document.createTextNode(realsummary);
-    document.body.appendChild(titlee);
+    document.body.appendChild(realtitle);
     document.body.appendChild(datee);
     document.body.appendChild(summaryy)
 
