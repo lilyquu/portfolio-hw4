@@ -35,7 +35,7 @@ btncreate.addEventListener('click', () => {
     
     window.localStorage.getItem('myPost1');
     
-    var temp = document.getElementsById("realpost");
+    var temp = document.getElementsByTagName("template")[0];
     var clon = temp.content.cloneNode(true);
     document.body.appendChild(clon);
 })
